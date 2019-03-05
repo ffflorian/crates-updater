@@ -1,10 +1,13 @@
 {
   "author": "Florian Keller <github@floriankeller.de>",
   "bin": {
+    "crates-updater": "dist/cli.js",
     "update-crate": "dist/cli.js",
     "update-crates": "dist/cli.js"
   },
   "dependencies": {
+    "commander": "2.19.0",
+    "compare-versions": "3.4.0",
     "libraries.io": "1.2.2"
   },
   "description": "Check your Rust packages for updates.",
