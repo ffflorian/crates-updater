@@ -16,7 +16,6 @@ Check your Rust packages for updates.
 Options:
   -p, --package <package>          which package to check (required)
   -V, --package-version <version>  which version to check
-  -k, --api-key <key>              set the API key for libraries.io (required)
   -v, --version                    output the version number
   -h, --help                       output usage information
 ```
@@ -25,8 +24,8 @@ Options:
 
 ```shell
 # returns either a newer version or nothing
-crates-updater -p ripgrep -V 0.9.0 -k <api key>
+crates-updater -p ripgrep -V 0.9.0
 
 # returns the latest version
-crates-updater -p ripgrep -k <api key>
+crates-updater -p ripgrep
 ```

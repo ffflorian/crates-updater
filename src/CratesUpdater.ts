@@ -1,28 +1,28 @@
 import compareVersions = require('compare-versions');
-import {LibrariesIO, ProjectVersion} from 'libraries.io';
+import {CratesIO, Version as CrateVersion} from 'crates.io';
 
 class CratesUpdater {
-  private readonly librariesIO: LibrariesIO;
+  private readonly cratesIO: CratesIO;
 
-  constructor(apiKey: string) {
-    this.librariesIO = new LibrariesIO(apiKey);
+  constructor() {
+    this.cratesIO = new CratesIO();
   }
 
-  public async getVersions(packageName: string): Promise<ProjectVersion[]> {
-    const result = await this.librariesIO.api.project.getProject('cargo', packageName);
-    return result.data.versions;
+  public async getVersions(packageName: string): Promise<CrateVersion[]> {
+    const result = await this.cratesIO.api.crates.getVersions(packageName);
+    return result.versions;
   }
 
-  public async getLatestVersion(packageName: string): Promise<ProjectVersion> {
+  public async getLatestVersion(packageName: string): Promise<CrateVersion> {
     const versions = await this.getVersions(packageName);
-    const sorted = versions.sort((a, b) => compareVersions(a.number, b.number));
+    const sorted = versions.sort((a, b) => compareVersions(a.num, b.num));
     return sorted[versions.length - 1];
   }
 
   public async checkForUpdate(packageName: string, version: string): Promise<string | null> {
     const latestVersion = await this.getLatestVersion(packageName);
-    if (compareVersions(latestVersion.number, version) > 0) {
-      return latestVersion.number;
+    if (compareVersions(latestVersion.num, version) > 0) {
+      return latestVersion.num;
     }
 
     return null;

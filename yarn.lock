@@ -16,11 +16,6 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@types/node@10.12.7":
-  version "10.12.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.7.tgz#195808b2d4b2e7c33e75e7d9b24aeee88f94660d"
-  integrity sha512-Zh5Z4kACfbeE8aAOYh9mqotRxaZMro8MbBQtR8vEXOMiZo2rGEh2LayJijKdlu48YnS6y2EFU/oo2NCe5P6jGw==
-
 "@types/node@11.10.5":
   version "11.10.5"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.10.5.tgz#fbaca34086bdc118011e1f05c47688d432f2d571"
@@ -320,6 +315,13 @@ cosmiconfig@^5.0.2, cosmiconfig@^5.0.7:
     js-yaml "^3.9.0"
     lodash.get "^4.4.2"
     parse-json "^4.0.0"
+
+crates.io@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-0.1.0.tgz#3563994d3cac405f4e160d845de2e92e0534bd26"
+  integrity sha512-jwcyRUliZeHwrpoq69r8MYBOaHstwLcV9VI5rxfurkJsgUr0PUY3lkhNYJ6+DysCTWfLiGhrSd0R6XuGKbCR6w==
+  dependencies:
+    axios "0.18.0"
 
 cross-spawn@^6.0.0:
   version "6.0.5"
@@ -956,14 +958,6 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.2.tgz#01146b36a6218e64e58f3a8d66de5d7fc6f6d051"
   integrity sha512-s5kLOcnH0XqDO+FvuaLX8DDjZ18CGFk7VygH40QoKPUQhW4e2rvM0rwUq0t8IQDOwYSeLK01U90OjzBTme2QqA==
-
-libraries.io@1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/libraries.io/-/libraries.io-1.2.2.tgz#e2661496428b7d4abf97e41bcd09e57f1d4a374d"
-  integrity sha512-91Rk8WugD+MigT0VVQ85XYndLEsxsXA5loxnBpUknfSPXXq9wI3FSEULb2vaSt6+wsplQUPk7My6mti/GxSv+g==
-  dependencies:
-    "@types/node" "10.12.7"
-    axios "0.18.0"
 
 lines-and-columns@^1.1.6:
   version "1.1.6"

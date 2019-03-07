@@ -10,21 +10,20 @@ program
   .description(description)
   .option('-p, --package <package>', 'which package to check (required)')
   .option('-V, --package-version <version>', 'which version to check')
-  .option('-k, --api-key <key>', 'set the API key for libraries.io (required)')
   .version(version, '-v, --version')
   .parse(process.argv);
 
-if (!program.options.length || !program.apiKey || !program.package) {
+if (!program.options.length || !program.package) {
   program.outputHelp();
   process.exit(1);
 }
 
-const cratesUpdater = new CratesUpdater(program.apiKey);
+const cratesUpdater = new CratesUpdater();
 
 if (program.package && !program.packageVersion) {
   cratesUpdater
     .getLatestVersion(program.package)
-    .then(version => console.log(version.number))
+    .then(version => console.log(version.num))
     .catch(error => {
       console.error(error);
       process.exit(1);

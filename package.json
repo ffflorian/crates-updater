@@ -8,7 +8,7 @@
   "dependencies": {
     "commander": "2.19.0",
     "compare-versions": "3.4.0",
-    "libraries.io": "1.2.2"
+    "crates.io": "0.1.0"
   },
   "description": "Check your Rust packages for updates.",
   "devDependencies": {
@@ -32,7 +32,6 @@
   },
   "keywords": [
     "typescript",
-    "librariesio",
     "cratesio",
     "rust",
     "cli"
