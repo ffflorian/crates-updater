@@ -316,10 +316,10 @@ cosmiconfig@^5.0.2, cosmiconfig@^5.0.7:
     lodash.get "^4.4.2"
     parse-json "^4.0.0"
 
-crates.io@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-0.1.0.tgz#3563994d3cac405f4e160d845de2e92e0534bd26"
-  integrity sha512-jwcyRUliZeHwrpoq69r8MYBOaHstwLcV9VI5rxfurkJsgUr0PUY3lkhNYJ6+DysCTWfLiGhrSd0R6XuGKbCR6w==
+crates.io@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-0.1.1.tgz#bad53da6d92840bd17b5e9c61076b3739dc26635"
+  integrity sha512-/JqEmD9Xs2lRIDgCAH7JWBUzjbeqChnDJlpmAD8WLLXC3+nsef0/oAcvDV5twUkhhdJJc/rM5mUB2M8sw+61mQ==
   dependencies:
     axios "0.18.0"
 
