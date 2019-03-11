@@ -9,6 +9,14 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@ffflorian/api-client@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-0.1.0.tgz#7b40db37c940cc85fccdc355327d3021ff4eb82c"
+  integrity sha512-A/mUsrofBzBxfl/DOoK7Q0fKB+olX+nfW+RPc62CN7TQxJ/NCUsfWEZLh4lKTSGYCIg2YE4GnwEfBJrR3vsdrQ==
+  dependencies:
+    axios "0.18.0"
+    http-status-codes "1.3.1"
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
@@ -316,12 +324,12 @@ cosmiconfig@^5.0.2, cosmiconfig@^5.0.7:
     lodash.get "^4.4.2"
     parse-json "^4.0.0"
 
-crates.io@0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-0.1.1.tgz#bad53da6d92840bd17b5e9c61076b3739dc26635"
-  integrity sha512-/JqEmD9Xs2lRIDgCAH7JWBUzjbeqChnDJlpmAD8WLLXC3+nsef0/oAcvDV5twUkhhdJJc/rM5mUB2M8sw+61mQ==
+crates.io@0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-0.3.0.tgz#09f5625cb6591a7517721b665b078dc6e7382311"
+  integrity sha512-SBcxAj+nH3rhLOYaUoqhZRDM+NO+EyLvD+li2oeNj9m5gCbSMC2Y7V8a++1KmUXFkrr2KK/yopw9yIbb0SiFBg==
   dependencies:
-    axios "0.18.0"
+    "@ffflorian/api-client" "0.1.0"
 
 cross-spawn@^6.0.0:
   version "6.0.5"
@@ -678,6 +686,11 @@ hosted-git-info@^2.1.4:
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
   integrity sha512-7T/BxH19zbcCTa8XkMlbK5lTo1WtgkFi3GvdWEyNuc4Vex7/9Dqbnpsf4JMydcfj9HCg4zUWFTL3Za6lapg5/w==
+
+http-status-codes@1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/http-status-codes/-/http-status-codes-1.3.1.tgz#534ee8ac601037b71e0fe396147d773fc38ecbe0"
+  integrity sha512-j7EfK9geezX8jYI/GCe4N/8y14K67+TB/bseZrYjbGdt5E/j5tx5wY8s450EDdfQFlHKfF1tgfXVIzqyJXfM6w==
 
 husky@1.3.1:
   version "1.3.1"
