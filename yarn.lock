@@ -324,10 +324,10 @@ cosmiconfig@^5.0.2, cosmiconfig@^5.0.7:
     lodash.get "^4.4.2"
     parse-json "^4.0.0"
 
-crates.io@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-0.3.0.tgz#09f5625cb6591a7517721b665b078dc6e7382311"
-  integrity sha512-SBcxAj+nH3rhLOYaUoqhZRDM+NO+EyLvD+li2oeNj9m5gCbSMC2Y7V8a++1KmUXFkrr2KK/yopw9yIbb0SiFBg==
+crates.io@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-0.3.1.tgz#0ab61b92c141f6d818260b67f075031313da445c"
+  integrity sha512-KWwUNSMO1pfrxQ6QTJHpgdTEvE7zgZLUK0Gl5Gd4gNhcmGguPkffagwzgNaWjThH2sr4gzrNVFIG2+5Swea+Ow==
   dependencies:
     "@ffflorian/api-client" "0.1.0"
 
