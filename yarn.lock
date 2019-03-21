@@ -9,13 +9,13 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@ffflorian/api-client@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-0.1.0.tgz#7b40db37c940cc85fccdc355327d3021ff4eb82c"
-  integrity sha512-A/mUsrofBzBxfl/DOoK7Q0fKB+olX+nfW+RPc62CN7TQxJ/NCUsfWEZLh4lKTSGYCIg2YE4GnwEfBJrR3vsdrQ==
+"@ffflorian/api-client@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-0.2.0.tgz#c95fd02a3e82164eca91445560702671ab561a70"
+  integrity sha512-bysWVS/aaccCNu8tF/f3ScnUoSqrw9TuMIffywL+FzEhjIzOd1TTucULj0791aGB10x98muX9KyUNwRTkdCTHA==
   dependencies:
     axios "0.18.0"
-    http-status-codes "1.3.1"
+    http-status-codes "1.3.2"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -324,12 +324,12 @@ cosmiconfig@^5.0.2, cosmiconfig@^5.0.7:
     lodash.get "^4.4.2"
     parse-json "^4.0.0"
 
-crates.io@0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-0.3.1.tgz#0ab61b92c141f6d818260b67f075031313da445c"
-  integrity sha512-KWwUNSMO1pfrxQ6QTJHpgdTEvE7zgZLUK0Gl5Gd4gNhcmGguPkffagwzgNaWjThH2sr4gzrNVFIG2+5Swea+Ow==
+crates.io@0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-0.3.2.tgz#96ba63c9dcdcc145ae752e5ef60be3a5472d6d92"
+  integrity sha512-Ex+cvT+W7TvhbApPBbZrGtQrXYGsgpnSAkUUrf+8q+qI6PduCdVfGR1ASu4roDvH6pewJA57yDCUkiYYRBIW7g==
   dependencies:
-    "@ffflorian/api-client" "0.1.0"
+    "@ffflorian/api-client" "0.2.0"
 
 cross-spawn@^6.0.0:
   version "6.0.5"
@@ -687,10 +687,10 @@ hosted-git-info@^2.1.4:
   resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.7.1.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
   integrity sha512-7T/BxH19zbcCTa8XkMlbK5lTo1WtgkFi3GvdWEyNuc4Vex7/9Dqbnpsf4JMydcfj9HCg4zUWFTL3Za6lapg5/w==
 
-http-status-codes@1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/http-status-codes/-/http-status-codes-1.3.1.tgz#534ee8ac601037b71e0fe396147d773fc38ecbe0"
-  integrity sha512-j7EfK9geezX8jYI/GCe4N/8y14K67+TB/bseZrYjbGdt5E/j5tx5wY8s450EDdfQFlHKfF1tgfXVIzqyJXfM6w==
+http-status-codes@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/http-status-codes/-/http-status-codes-1.3.2.tgz#181dfa4455ef454e5e4d827718fca3936680d10d"
+  integrity sha512-nDUtj0ltIt08tGi2VWSpSzNNFye0v3YSe9lX3lIqLTuVvvRiYCvs4QQBSHo0eomFYw1wlUuofurUAlTm+vHnXg==
 
 husky@1.3.1:
   version "1.3.1"
