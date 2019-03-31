@@ -25,11 +25,6 @@
   "files": [
     "dist"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "keywords": [
     "typescript",
     "cratesio",
@@ -42,7 +37,7 @@
       "tslint --config tslint.json --project tsconfig.json --fix",
       "git add"
     ],
-    "*.{json,md,css}": [
+    "*.{json,md}": [
       "prettier --write",
       "git add"
     ]
@@ -56,8 +51,8 @@
     "dist": "yarn clean && yarn build",
     "lint": "yarn lint:ts && yarn lint:other",
     "lint:other": "yarn prettier --list-different",
-    "lint:ts": "tslint --config tslint.json --project tsconfig.json \"**/*.ts\"",
-    "prettier": "prettier --ignore-path .gitignore --write \"**/*.ts\"",
+    "lint:ts": "tslint --project tsconfig.json",
+    "prettier": "prettier --write \"**/*.{json,md}\"",
     "test": "exit 0"
   },
   "version": "0.2.0"
