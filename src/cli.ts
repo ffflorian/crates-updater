@@ -20,22 +20,24 @@ if (!program.options.length || !program.package) {
 
 const cratesUpdater = new CratesUpdater();
 
-if (program.package && !program.packageVersion) {
+if (program.package && program.packageVersion) {
   cratesUpdater
-    .getLatestVersion(program.package)
-    .then(version => console.log(version.num))
+    .checkForUpdate(program.package, program.packageVersion)
+    .then(version => {
+      if (version) {
+        console.log(`An update for ${program.package} is available: ${version}.`);
+      } else {
+        console.log(`No update for ${program.package} available.`);
+      }
+    })
     .catch(error => {
       console.error(error);
       process.exit(1);
     });
 } else {
   cratesUpdater
-    .checkForUpdate(program.package, program.packageVersion)
-    .then(version => {
-      if (version) {
-        console.log(version);
-      }
-    })
+    .getLatestVersion(program.package)
+    .then(version => console.log(version.num))
     .catch(error => {
       console.error(error);
       process.exit(1);
