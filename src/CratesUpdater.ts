@@ -9,14 +9,13 @@ class CratesUpdater {
   }
 
   public async getVersions(packageName: string): Promise<CrateVersion[]> {
-    const result = await this.cratesIO.api.crates.getVersions(packageName);
-    return result.versions;
+    const {versions} = await this.cratesIO.api.crates.getVersions(packageName);
+    return versions;
   }
 
   public async getLatestVersion(packageName: string): Promise<CrateVersion> {
     const versions = await this.getVersions(packageName);
-    const sorted = versions.sort((a, b) => compareVersions(a.num, b.num));
-    return sorted[versions.length - 1];
+    return versions.sort((a, b) => compareVersions(a.num, b.num)).pop()!;
   }
 
   public async checkForUpdate(packageName: string, version: string): Promise<string | null> {

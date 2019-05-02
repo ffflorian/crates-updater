@@ -2,7 +2,6 @@
   "author": "Florian Keller <github@floriankeller.de>",
   "bin": {
     "crates-updater": "dist/cli.js",
-    "update-crate": "dist/cli.js",
     "update-crates": "dist/cli.js"
   },
   "dependencies": {
