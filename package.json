@@ -12,11 +12,15 @@
   "description": "Check your Rust packages for updates.",
   "devDependencies": {
     "@ffflorian/prettier-config": "0.0.3",
+    "@ffflorian/tslint-config": "0.1.0",
+    "@semantic-release/changelog": "3.0.2",
+    "@semantic-release/git": "7.0.8",
     "@types/node": "12.0.0",
     "husky": "2.2.0",
     "lint-staged": "8.1.6",
     "prettier": "1.17.0",
     "rimraf": "2.6.3",
+    "semantic-release": "15.13.12",
     "tslint": "5.16.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-plugin-prettier": "2.0.1",
@@ -39,7 +43,7 @@
   "license": "MIT",
   "lint-staged": {
     "*.ts": [
-      "tslint --config tslint.json --project tsconfig.json --fix",
+      "tslint --project tsconfig.json --fix",
       "git add"
     ],
     "*.{json,md}": [
@@ -55,10 +59,14 @@
     "build": "tsc",
     "clean": "rimraf dist",
     "dist": "yarn clean && yarn build",
+    "fix": "yarn fix:other && yarn fix:ts",
+    "fix:other": "yarn prettier --write",
+    "fix:ts": "yarn lint:ts --fix",
     "lint": "yarn lint:ts && yarn lint:other",
     "lint:other": "yarn prettier --list-different",
     "lint:ts": "tslint --project tsconfig.json",
-    "prettier": "prettier --write \"**/*.{json,md}\"",
+    "prettier": "prettier \"*.{json,md}\"",
+    "release": "semantic-release",
     "test": "exit 0"
   },
   "version": "0.2.0"
