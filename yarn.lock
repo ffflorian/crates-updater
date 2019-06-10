@@ -25,10 +25,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@ffflorian/api-client@0.4.4":
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-0.4.4.tgz#1fc45928936ce7f6afb550b9d19dc839b2f9559c"
-  integrity sha512-ov3UVj9mVm3LhEXF2ViAnfw8PYNmcHaurv2KgHB1L/2RVO1c5sgibNaz3IfYEBDK85NZDb68b6YDAcVtyhBRrw==
+"@ffflorian/api-client@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-0.5.0.tgz#4993813b5731b2f3bccb290df2bb59e475ef234d"
+  integrity sha512-4gSTgvuFPfnO2ooYs8xPH6bmzQnV/49OGRUCzAyOQrjEO0BFP786isw+fdThZYtp6h17qGHYV3MBjJ3Y8iFAEg==
   dependencies:
     axios "0.19.0"
     http-status-codes "1.3.2"
@@ -1028,12 +1028,12 @@ cosmiconfig@^5.0.1, cosmiconfig@^5.2.0:
     js-yaml "^3.13.0"
     parse-json "^4.0.0"
 
-crates.io@0.3.13:
-  version "0.3.13"
-  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-0.3.13.tgz#05d857b6fc43cf89f5c4926a7c3ec68f43804957"
-  integrity sha512-bofYdqVrZl66Ekd5i9tgfUibGtUCvO4LOIooDMeQNt3HmLZ64UPXEpDEwV9J36ukdPzP72P0kbEbvQGJLn58cw==
+crates.io@0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-0.4.0.tgz#f0fd969820192c9052fa3b098bd1aa758fc880c1"
+  integrity sha512-92wpeX2GKmOWeHp+t23veziJbb5tvyoQlR6dnSvq03cZp23OO9CWpuMNEksU9vuDL970R7bN9LSoi5Bdje5w9w==
   dependencies:
-    "@ffflorian/api-client" "0.4.4"
+    "@ffflorian/api-client" "0.5.0"
 
 create-error-class@^3.0.0:
   version "3.0.2"
