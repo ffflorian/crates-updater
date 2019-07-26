@@ -3,7 +3,7 @@
 import * as program from 'commander';
 import {CratesUpdater} from './CratesUpdater';
 
-const {name, version, description}: {name: string; version: string; description: string} = require('../package.json');
+const {name, version, description}: {description: string; name: string; version: string} = require('../package.json');
 
 program
   .name(name)
