@@ -1,3 +1,9 @@
+# [1.1.0](https://github.com/ffflorian/crates-updater/compare/v1.0.0...v1.1.0) (2019-08-17)
+
+### Features
+
+- Quiet mode, simple functions ([#123](https://github.com/ffflorian/crates-updater/issues/123)) ([9e075d8](https://github.com/ffflorian/crates-updater/commit/9e075d8))
+
 # [1.0.0](https://github.com/ffflorian/crates-updater/compare/v0.4.0...v1.0.0) (2019-07-17)
 
 ### Features
