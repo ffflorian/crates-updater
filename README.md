@@ -9,23 +9,26 @@ Run `yarn global add crates-updater` or `npm i -g crates-updater`.
 ## Usage
 
 ```
-Usage: crates-updater [options]
+Usage: crates-updater [options] <package> [packageVersion]
 
 Check your Rust packages for updates.
 
 Options:
-  -p, --package <package>          which package to check (required)
-  -V, --package-version <version>  which version to check
-  -v, --version                    output the version number
-  -h, --help                       output usage information
+  -q, --quiet    quiet mode. Display newer version or nothing
+  -v, --version  output the version number
+  -h, --help     output usage information
 ```
 
 ## Examples
 
 ```shell
 # returns either a newer version or nothing
-crates-updater -p ripgrep -V 0.9.0
+crates-updater ripgrep -q 0.9.0
 
-# returns the latest version
-crates-updater -p ripgrep
+# returns the latest version with a helpful text
+crates-updater ripgrep
 ```
+
+## API Usage
+
+See [`cli.ts`](./src/cli.ts).

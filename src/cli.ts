@@ -1,45 +1,52 @@
 #!/usr/bin/env node
 
 import * as program from 'commander';
-import {CratesUpdater} from './CratesUpdater';
+import * as CratesUpdater from './CratesUpdater';
 
-const {name, version, description}: {description: string; name: string; version: string} = require('../package.json');
+const {name, version, description} = require('../package.json');
 
 program
   .name(name)
   .description(description)
-  .option('-p, --package <package>', 'which package to check (required)')
-  .option('-V, --package-version <version>', 'which version to check')
+  .arguments('<package>')
+  .arguments('[packageVersion]')
+  .option('-q, --quiet', 'quiet mode. Display newer version or nothing')
   .version(version, '-v, --version')
   .parse(process.argv);
 
-if (!program.options.length || !program.package) {
+if (!program.args.length) {
   program.outputHelp();
   process.exit(1);
 }
 
-const cratesUpdater = new CratesUpdater();
+const [packageName, packageVersion] = program.args;
 
-if (program.package && program.packageVersion) {
-  cratesUpdater
-    .checkForUpdate(program.package, program.packageVersion)
+if (packageVersion) {
+  CratesUpdater.checkForUpdate(packageName, packageVersion)
     .then(version => {
-      if (version) {
-        console.log(`An update for ${program.package} is available: ${version}.`);
+      if (program.quiet) {
+        if (version) {
+          console.log(version);
+        }
       } else {
-        console.log(`No update for ${program.package} available.`);
+        const text = version
+          ? `An update for ${packageName} is available: ${version}.`
+          : `No update for ${packageName} available.`;
+        console.log(text);
       }
     })
     .catch(error => {
-      console.error(error);
+      console.error(error.message);
       process.exit(1);
     });
 } else {
-  cratesUpdater
-    .getLatestVersion(program.package)
-    .then(version => console.log(version.num))
+  CratesUpdater.getLatestVersion(packageName)
+    .then(version => {
+      const text = program.quiet ? version.num : `Latest ${packageName} version is ${version.num}.`;
+      console.log(text);
+    })
     .catch(error => {
-      console.error(error);
+      console.error(error.message);
       process.exit(1);
     });
 }
