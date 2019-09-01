@@ -18,14 +18,6 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
-"@ffflorian/api-client@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@ffflorian/api-client/-/api-client-1.0.0.tgz#ea892139bbeffbd0f5f49533d27cbaf3a675f216"
-  integrity sha512-ALP6b7nEKrDqu3hFv+V43tbs6qZKmn1nAViXl50gM89QS/bWWXK3uvsWsTntRzNUjLMznGEJntHbWg4S+DRjag==
-  dependencies:
-    axios "0.19.0"
-    http-status-codes "1.3.2"
-
 "@ffflorian/prettier-config@0.0.5":
   version "0.0.5"
   resolved "https://registry.npmjs.org/@ffflorian/prettier-config/-/prettier-config-0.0.5.tgz#5a6872fa650ac3b1312d5c5bc4d8281c7ca7b0ab"
@@ -960,12 +952,12 @@ cosmiconfig@^5.0.1, cosmiconfig@^5.2.1:
     js-yaml "^3.13.1"
     parse-json "^4.0.0"
 
-crates.io@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/crates.io/-/crates.io-1.0.0.tgz#68cc0270c4f6848d898f75e86c722e47cf94ac4d"
-  integrity sha512-e1bwskTFUPt8a5sI6fOXMyZ0l1og03z2gHLVsqfUlbRIk57FODYC5HrO4WqmEo1hUmjjI8XKQiNmnUH332LsEw==
+crates.io@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/crates.io/-/crates.io-1.1.0.tgz#d72c9aba6e717112273cc02a1001facd48218404"
+  integrity sha512-i0HIfaMFN7njhODlNRONUwMw2RloW1T4V4gMuthMIJtuCXR3J5eT09q9ZFl1bU5VAN9R1kKlB+2CJmb3V3p0kA==
   dependencies:
-    "@ffflorian/api-client" "1.0.0"
+    axios "0.19.0"
 
 create-error-class@^3.0.0:
   version "3.0.2"
@@ -1826,11 +1818,6 @@ http-signature@~1.2.0:
     assert-plus "^1.0.0"
     jsprim "^1.2.2"
     sshpk "^1.7.0"
-
-http-status-codes@1.3.2:
-  version "1.3.2"
-  resolved "https://registry.npmjs.org/http-status-codes/-/http-status-codes-1.3.2.tgz#181dfa4455ef454e5e4d827718fca3936680d10d"
-  integrity sha512-nDUtj0ltIt08tGi2VWSpSzNNFye0v3YSe9lX3lIqLTuVvvRiYCvs4QQBSHo0eomFYw1wlUuofurUAlTm+vHnXg==
 
 https-proxy-agent@^2.2.1:
   version "2.2.2"
