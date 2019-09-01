@@ -5,7 +5,7 @@
     "update-crates": "dist/cli.js"
   },
   "dependencies": {
-    "commander": "3.0.0",
+    "commander": "3.0.1",
     "compare-versions": "3.5.1",
     "crates.io": "1.0.0"
   },
