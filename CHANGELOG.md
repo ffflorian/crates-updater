@@ -1,3 +1,9 @@
+# [1.2.0](https://github.com/ffflorian/crates-updater/compare/v1.1.0...v1.2.0) (2020-01-03)
+
+### Features
+
+- Publish flattened ([e1113e4](https://github.com/ffflorian/crates-updater/commit/e1113e4))
+
 # [1.1.0](https://github.com/ffflorian/crates-updater/compare/v1.0.0...v1.1.0) (2019-08-17)
 
 ### Features
