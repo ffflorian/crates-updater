@@ -1132,10 +1132,10 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
-crates.io@1.1.3:
-  version "1.1.3"
-  resolved "https://registry.npmjs.org/crates.io/-/crates.io-1.1.3.tgz#79d417db7d1b19679d17ca43fa4482bde65e3aae"
-  integrity sha512-/CIvisYjao6VV4go0qXZp8kP2S4wNit+wKePOBeqADq7QisMBsaQR5hgIkvLJVpuytmOaTRGoflTP/SGjrbRqQ==
+crates.io@1.1.4:
+  version "1.1.4"
+  resolved "https://registry.npmjs.org/crates.io/-/crates.io-1.1.4.tgz#f7d4c4b9a80b0370f26dd740a5bff8455c470e52"
+  integrity sha512-B3IihhkPW9xCo0mohzRUph+3u+PvJofP+S2H28xB4T4dJ/BVzzlRGTCvX391PgwC8uezhvdKPrm7TAkp6qZF0A==
   dependencies:
     axios "0.19.1"
 
