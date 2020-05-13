@@ -33,13 +33,13 @@ if (packageVersion) {
     .then(version => {
       if (program.quiet) {
         if (version) {
-          console.log(version);
+          console.info(version);
         }
       } else {
         const text = version
           ? `An update for ${packageName} is available: ${version}.`
           : `No update for ${packageName} available.`;
-        console.log(text);
+        console.info(text);
       }
     })
     .catch(error => {
@@ -50,7 +50,7 @@ if (packageVersion) {
   CratesUpdater.getLatestVersion(packageName)
     .then(version => {
       const text = program.quiet ? version.num : `Latest ${packageName} version is ${version.num}.`;
-      console.log(text);
+      console.info(text);
     })
     .catch(error => {
       console.error(error.message);

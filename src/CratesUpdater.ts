@@ -14,7 +14,7 @@ export async function checkForUpdate(packageName: string, version: string): Prom
 
 export async function getLatestVersion(packageName: string): Promise<CrateVersion> {
   const versions = await getVersions(packageName);
-  return versions.sort((a, b) => compareVersions(a.num, b.num)).pop()!;
+  return versions.sort((versionA, versionB) => compareVersions(versionA.num, versionB.num)).pop()!;
 }
 
 export async function getVersions(packageName: string): Promise<CrateVersion[]> {
