@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import * as program from 'commander';
+import * as commander from 'commander';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as CratesUpdater from './CratesUpdater';
@@ -12,7 +12,7 @@ const packageJsonPath = fs.existsSync(defaultPackageJsonPath)
 
 const {bin, description, version} = require(packageJsonPath);
 
-program
+commander
   .name(Object.keys(bin)[0])
   .description(description)
   .arguments('<package>')
@@ -21,17 +21,17 @@ program
   .version(version, '-v, --version')
   .parse(process.argv);
 
-if (!program.args.length) {
-  program.outputHelp();
+if (!commander.args.length) {
+  commander.outputHelp();
   process.exit(1);
 }
 
-const [packageName, packageVersion] = program.args;
+const [packageName, packageVersion] = commander.args;
 
 if (packageVersion) {
   CratesUpdater.checkForUpdate(packageName, packageVersion)
     .then(version => {
-      if (program.quiet) {
+      if (commander.quiet) {
         if (version) {
           console.info(version);
         }
@@ -49,7 +49,7 @@ if (packageVersion) {
 } else {
   CratesUpdater.getLatestVersion(packageName)
     .then(version => {
-      const text = program.quiet ? version.num : `Latest ${packageName} version is ${version.num}.`;
+      const text = commander.quiet ? version.num : `Latest ${packageName} version is ${version.num}.`;
       console.info(text);
     })
     .catch(error => {
