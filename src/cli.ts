@@ -27,12 +27,13 @@ if (!commander.args.length) {
 }
 
 const [packageName, packageVersion] = commander.args;
+const commanderOptions = commander.opts();
 
 void (async () => {
   try {
     if (packageVersion) {
       const version = await CratesUpdater.checkForUpdate(packageName, packageVersion);
-      if (commander.quiet) {
+      if (commanderOptions.quiet) {
         if (version) {
           console.info(version);
         }
@@ -44,7 +45,7 @@ void (async () => {
       }
     } else {
       const version = await CratesUpdater.getLatestVersion(packageName);
-      const text = commander.quiet ? version.num : `Latest ${packageName} version is ${version.num}.`;
+      const text = commanderOptions.quiet ? version.num : `Latest ${packageName} version is ${version.num}.`;
       console.info(text);
     }
     process.exit();
