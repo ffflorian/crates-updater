@@ -1,4 +1,4 @@
-import compareVersions = require('compare-versions');
+import {compareVersions} from 'compare-versions';
 import {CratesIO, Version as CrateVersion} from 'crates.io';
 
 const cratesIO = new CratesIO();
